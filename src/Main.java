@@ -27,6 +27,12 @@ public class Main {
 
         //Task 2
         numbersForTask();
+
+        // Task 3.2
+
+        MultiplicationTable multiplicationTable = new MultiplicationTable();
+        System.out.println(multiplicationTable);
+
     }
 
     private static void numbersForTask() {
