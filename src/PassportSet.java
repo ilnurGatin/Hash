@@ -6,7 +6,12 @@ public class PassportSet {
     private Set<Passport> passportSet = new HashSet<>();
 
     public void addPassport(Passport passport) {
-        passportSet.add(passport);
+        if (passportSet.contains(passport)) {
+            throw new RuntimeException("Паспорт уже в списке");
+
+        } else {
+            passportSet.add(passport);
+        }
     }
 
     public Passport findPassportByNumber(int number) {
